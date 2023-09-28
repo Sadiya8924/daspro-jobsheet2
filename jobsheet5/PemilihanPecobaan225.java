@@ -14,6 +14,9 @@ public class PemilihanPecobaan225 {
         float kuis = input25.nextFloat();
         System.out.print("Nilai tugas   : ");
         float tugas = input25.nextFloat();
-        
+        float total = (uas * 04F) + (uts * 0.3F) + (kuis * 0.1F) + (tugas * 0.2F);
+        String message = total < 65 ? "Remidi" : "Tidak Remidi";
+        System.out.println("Nilai akhir = " + total + " sehingga " + message);
+
     }
 }
