@@ -16,9 +16,8 @@ public class Pemilihan2Percobaan125 {
             } else {
                 System.out.println("Bukan tahun kabisat");
             }
-        } else {
+        } else
             System.out.println("Bukan Tahun Kabisat");
-        }
-
+        
     }
 }
