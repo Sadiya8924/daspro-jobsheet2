@@ -22,6 +22,13 @@ public class WhileGaji25 {
             System.out.print("Masukkan jumlah jam lembur: ");
             jumlahJamLembur = scan.nextInt();
             i++;
+            while (!jabatan.equalsIgnoreCase("direktur") && !jabatan.equalsIgnoreCase("manajer") && !jabatan.equalsIgnoreCase("karyawan")) {
+                System.out.println("Jabatan yang dimasukkan tidak valid.");
+                System.out.print("Masukkan jabatan karyawan ke-" + (i) + " lagi: ");
+                jabatan = scan.next();
+                System.out.print("Masukkan jumlah jam lembur: ");
+                jumlahJamLembur = scan.nextInt();
+            }
 
             if (jabatan.equalsIgnoreCase("direktur")) {
                 continue;
@@ -34,7 +41,7 @@ public class WhileGaji25 {
             totalGajiLembur += gajiLembur;
 
             System.out.println("Total gaji lembur: " + totalGajiLembur);
-
+ 
         }
     }
 }
