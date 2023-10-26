@@ -9,7 +9,7 @@ public class ArrayNilai24 {
         int[] nilaiAkhir = new int[10];
 
         for (int i = 0; i < 10; i++) {
-            System.out.println("Masukkan nilai akhir ke- "+i+" : ");
+            System.out.println("Masukkan nilai akhir ke- "+i+" :");
             nilaiAkhir[i] = sc.nextInt();
         }
         for (int i = 0; i < 10; i++) {
