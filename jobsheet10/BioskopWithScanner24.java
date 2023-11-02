@@ -20,8 +20,10 @@ public class BioskopWithScanner24 {
 
             penonton[baris-1][kolom-1] = nama;
 
+            sc.nextLine();
             System.out.print("input penonton lainnya? (y/n): ");
             next = sc.nextLine();
+
             if (next.equalsIgnoreCase("n")){
                 break;
             }
